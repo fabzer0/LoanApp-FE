@@ -1,0 +1,204 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", "Helvetica Neue", serif;
+}
+
+/*Header*/
+
+.App-header {
+  min-height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: background-color 400ms linear;
+}
+
+.App-header--nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.responsiveHeader {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.responsive-nav:hover {
+  border-bottom: solid 2px #01c8c8;
+}
+
+.Header-nav {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.Header-nav > li a {
+  padding: 10px 16px;
+}
+
+.Header-nav > li a:hover {
+  color: #0165c8 !important;
+  border-bottom: solid 1px #01c8c8;
+}
+
+.App-logo {
+  height: 70px;
+}
+
+/*Hero*/
+
+.Hero {
+  background-color: rgba(38, 38, 38, 0.42);
+  z-index: 1;
+}
+
+.Hero__content--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.Hero__overlay {
+  background-image: url("./img/woman-sitting.jpg");
+  background-size: cover;
+  background-position: center center;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+.Hero__content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  z-index: 10;
+  height: max-content;
+  text-align: center;
+}
+
+.Hero__content > h3 {
+  font-size: 20px !important;
+}
+
+.Hero__content > h1 {
+  font-size: 40px !important;
+  margin: 0.25em 0;
+}
+
+.card-container {
+  text-align: center;
+  min-height: 100vh;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.unique-bg {
+  background-image: url("./img/bg-asset.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: fill;
+  background-size: contain;
+}
+
+.card-image {
+  height: 90px;
+  width: 90px;
+}
+
+.card-header {
+  display: flex;
+  height: 128px;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.card-number {
+  font-size: 80px;
+  font-weight: bold;
+  color: #01c8c8;
+  line-height: 80px;
+  height: min-content;
+}
+
+#how-it-works {
+  padding-top: 70px;
+}
+
+.section-woman {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0px 0px 0px 157px;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+}
+
+.women-walking {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+#need-more-help {
+  min-height: 40vh;
+}
+
+.dark-logo {
+  width: 100px;
+  height: 100px;
+  color: #ffffff;
+}
+
+.button-transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.button-transparent:hover {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: solid 2px;
+  border-bottom-color: #01c8c8;
+}
+
+.button-teal {
+  width: max-content;
+  font-weight: bold;
+  background-color: #01c8c8;
+}
+
+.button {
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  margin: 0 0.25vw;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-teal:hover {
+  background-color: #0165c8 !important;
+}
